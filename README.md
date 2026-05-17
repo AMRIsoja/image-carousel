@@ -39,5 +39,5 @@ A reusable and accessible image carousel built with React and Vite.
 
 ## Deployment
 
-- GitHub Repository: YOUR_REPOSITORY_URL
-- Live Demo: YOUR_VERCEL_URL
+- GitHub Repository: https://github.com/AMRIsoja/image-carousel
+- Live Demo: https://image-carousel-five-roan.vercel.app/
