@@ -1,0 +1,103 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  touch-action: pan-y;
+}
+
+.carousel__image-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #e5e7eb;
+}
+
+.carousel__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Navigation Buttons */
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.carousel__button:hover {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.carousel__button--prev {
+  left: 1rem;
+}
+
+.carousel__button--next {
+  right: 1rem;
+}
+
+/* Indicator Dots */
+.carousel__dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: white;
+}
+
+.carousel__dot {
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  background: #cbd5e1;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.carousel__dot.active {
+  background: #2563eb;
+  transform: scale(1.2);
+}
+
+.carousel__dot:hover {
+  background: #94a3b8;
+}
+
+.carousel:focus {
+  outline: 3px solid #2563eb;
+  outline-offset: 4px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+.carousel__button:focus,
+.carousel__dot:focus {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
